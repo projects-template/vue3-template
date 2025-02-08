@@ -1,39 +1,24 @@
 # vue-template
 
-This template should help get you started developing with Vue 3 in Vite.
+这个项目集成了eslint、prettier、commitlint、husky、lint-staged 可以规范代码格式和提交规范
 
-## Recommended IDE Setup
+eslint 和 prettier 可以规范代码格式
+commitlint 规范提交信息
+husky 在提交或推送时，自动化执行脚本检查。
+lint-staged 规范暂存区代码
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 使用方法
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
+pnpm install
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 提交规范
 
-```sh
-pnpm build
+```
+git add .
+git commit -m "feat: 添加新功能"
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+相应的commit规范在commitlint.config.cjs中
