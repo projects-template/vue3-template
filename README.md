@@ -22,3 +22,5 @@ git commit -m "feat: 添加新功能"
 ```
 
 相应的commit规范在commitlint.config.cjs中
+
+如果要绕过git commit 的规范，可以使用git commit --no-verify -m "feat: 添加新功能"
